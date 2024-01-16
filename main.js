@@ -8,7 +8,7 @@ function play(){
             let boxItem = document.createElement("div");
             contenitore.append(boxItem)
             boxItem.classList.add("item", "easy");
-            boxItem.textContent = i
+            boxItem.textContent = i;
         }
     } else if (settings.value === "medium"){
         for (let i = 1; i<= 81; i++){
@@ -25,5 +25,16 @@ function play(){
             boxItem.textContent = i
         }
 }
+const activeElements = document.querySelectorAll(".item");
+
+for (let i = 0; i < activeElements.length; i++) {
+    activeElements[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+    });
 }
+}
+
+
+
+
 

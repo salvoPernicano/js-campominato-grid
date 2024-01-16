@@ -68,6 +68,10 @@ main{
 .item.hard{
     flex-basis: calc(100% / 7);
 }
+.item.active {
+    background-color: red;
+    color: white;
+}
 
 footer{
     height: 100px;
