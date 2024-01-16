@@ -44,19 +44,29 @@ main{
 .container{
     width: 60%;
     margin: 0 auto;
-    border: 1px dashed black;
     display: flex;
     flex-wrap: wrap;
-    height: calc(100vh - 200px)
+    height: calc(100vh - 200px);
+    padding: 1em;
 }
 
 .item{
     border: 1px solid black;
-    flex-basis: calc(100% / 9);
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: bold;
+}
+
+.item.easy{
+    flex-basis: calc(100% / 10);
+}
+.item.medium{
+    flex-basis: calc(100% / 9);
+}
+
+.item.hard{
+    flex-basis: calc(100% / 7);
 }
 
 footer{
