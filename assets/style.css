@@ -3,9 +3,11 @@
     padding:0;
     box-sizing:border-box;
 }
+
 body{
     font-family: sans-serif;
 }
+
 header{
     height: 100px;
     border: 2px solid blue;
@@ -14,35 +16,46 @@ header{
     align-items: center;
     padding: 2em;
 }
+
 .leftSide img{
     height: 100px;
     aspect-ratio: 1;
 }
+
 .leftSide{
     display: flex;
     align-items: center;
 }
+
 label,
 select,
 button{
     font-weight:600
 }
+
 button{
     padding: 0 25px;
 }
+
 main{
     height: calc(100vh - 200px);
     border: 2px solid red;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #7fffd4;
 }
 
 .container{
     width: 80%;
     border: 1px dashed black;
 }
+
 footer{
     height: 100px;
-    border: 2px solid green
+    border: 2px solid green;
+    display: flex;
+    align-items: center;
+    padding: 2em;
+    font-weight: bold;
 }
