@@ -30,6 +30,7 @@ const activeElements = document.querySelectorAll(".item");
 for (let i = 0; i < activeElements.length; i++) {
     activeElements[i].addEventListener("click", function() {
         this.classList.toggle("active");
+        console.log(i +1)
     });
 }
 }
