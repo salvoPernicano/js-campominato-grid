@@ -58,16 +58,6 @@ main{
     font-weight: bold;
 }
 
-.item.easy{
-    flex-basis: calc(100% / 10);
-}
-.item.medium{
-    flex-basis: calc(100% / 9);
-}
-
-.item.hard{
-    flex-basis: calc(100% / 7);
-}
 .item.active {
     background-color: red;
     color: white;
